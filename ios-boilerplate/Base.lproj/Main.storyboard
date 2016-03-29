@@ -23,7 +23,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP1-ML-Wux">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP1-ML-Wux">
                                 <rect key="frame" x="243" y="319" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -34,10 +34,53 @@
                                     <action selector="buttonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwD-r2-2LA"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-oj-AMC">
+                                <rect key="frame" x="0.0" y="103" width="375" height="29"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qj4-ce-2O1">
+                                <rect key="frame" x="18" y="49" width="337" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hello, How are you?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jjz-Yk-P0m">
+                                <rect key="frame" x="18" y="140" width="337" height="206"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-Ea-szl">
+                                <rect key="frame" x="325" y="140" width="30" height="30"/>
+                                <state key="normal" title="Text"/>
+                                <connections>
+                                    <action selector="inputTextToTextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOe-3r-4Rj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="img-nq-NZe">
+                                <rect key="frame" x="0.0" y="218" width="375" height="403"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X6P-UB-xL2">
+                                <rect key="frame" x="316" y="629" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iq1-W4-97y"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nP1-ML-Wux"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="img-nq-NZe" id="Bd3-7X-zXa"/>
+                        <outlet property="switchButton" destination="X6P-UB-xL2" id="11C-vg-Zv4"/>
+                        <outlet property="textField" destination="Qj4-ce-2O1" id="S4V-yz-Wts"/>
+                        <outlet property="textView" destination="jjz-Yk-P0m" id="fAv-Ak-aKQ"/>
+                        <outlet property="webView" destination="BWm-oj-AMC" id="Idf-Fs-Tdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

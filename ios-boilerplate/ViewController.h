@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 - (IBAction)buttonTouch:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+- (IBAction)inputTextToTextView:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)switchTouch:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *switchButton;
+
 
 @end
 

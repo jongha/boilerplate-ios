@@ -15,6 +15,7 @@
 		8F92F6981CAA9C7C006528F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F92F6961CAA9C7C006528F9 /* LaunchScreen.storyboard */; };
 		8F92F6A31CAA9C7C006528F9 /* ios_boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92F6A21CAA9C7C006528F9 /* ios_boilerplateTests.m */; };
 		8F92F6AE1CAA9C7C006528F9 /* ios_boilerplateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F92F6AD1CAA9C7C006528F9 /* ios_boilerplateUITests.m */; };
+		8F92F6BC1CAAA8EA006528F9 /* PhotoImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F92F6BB1CAAA8EA006528F9 /* PhotoImage.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8F92F6A91CAA9C7C006528F9 /* ios-boilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-boilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F92F6AD1CAA9C7C006528F9 /* ios_boilerplateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_boilerplateUITests.m; sourceTree = "<group>"; };
 		8F92F6AF1CAA9C7C006528F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F92F6BB1CAAA8EA006528F9 /* PhotoImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PhotoImage.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		8F92F6871CAA9C7C006528F9 /* ios-boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				8F92F6BB1CAAA8EA006528F9 /* PhotoImage.jpeg */,
 				8F92F68B1CAA9C7C006528F9 /* AppDelegate.h */,
 				8F92F68C1CAA9C7C006528F9 /* AppDelegate.m */,
 				8F92F68E1CAA9C7C006528F9 /* ViewController.h */,
@@ -243,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F92F6BC1CAAA8EA006528F9 /* PhotoImage.jpeg in Resources */,
 				8F92F6981CAA9C7C006528F9 /* LaunchScreen.storyboard in Resources */,
 				8F92F6951CAA9C7C006528F9 /* Assets.xcassets in Resources */,
 				8F92F6931CAA9C7C006528F9 /* Main.storyboard in Resources */,
